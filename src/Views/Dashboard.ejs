@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .post{
+      width: 60%;
+      height: auto;
+      margin-left: 20%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid mt-3">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <form class="me-4 d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="/employ/list">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="/depart/list">Department</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="/desig/list">Designation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4" href="javascript:void(0)">Home</a>
+            </li>
+          </ul>
+          <a class="navbar-brand" href="#">
+            <img src="/images/<%= user.image %>" alt="Avatar Logo" style="width: 40px;height: 40px;" class="rounded-circle"> 
+          </a>
+          <a class="navbar-brand" href="javascript:void(0)"><%= user.name %></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="container post border border-2 border-dark mt-5">
+      <div class="mt-5 d-flex">
+        <img src="" alt="" width="" height="">
+        <h5>fiyf</h5>
+      </div>
+      <img src="" alt="" width="" height="">
+      <div></div>
+      <p>iyyrrdvt ffvf</p>
+    </div> -->
+
+    <div class="mt-5 d-flex justify-content-around">
+      <img src="https://miro.medium.com/v2/resize:fit:1400/1*JLwufp_v4FONwnqXta3b4g.png" alt="" width="40%" height="250vh">
+      <div class="w-50 mt-4">
+        <h5>ACADEMIC DEPARTMENTS</h5>
+        <p>Academic departments aim at improving students understanding of the nature of scientific knowledge. It provides a careful constructed, comprehensive program of courses, scheduled in a timely manner. To ensure students have proper and correct knowledge in various subjects that they learn in school.</p>
+      </div>
+    </div>
+
+    <div class="mt-5 d-flex justify-content-around">
+      <div class="w-50 mt-4">
+        <h5>What are school positions?</h5>
+        <p>There are often many different departments within a school, which creates different job opportunities for those interested in working in an educational setting. Many people wishing to work in a school may choose to become teachers and work directly with students, but there are other necessary jobs, too. Schools typically offer administrative and managerial positions, as well as physical and technical work.</p>
+      </div>
+      <img src="https://images.ctfassets.net/pdf29us7flmy/6TcTL2Av1jNjlbOuyhvtvS/22108c16e417d739307e4f9ac5e54244/resized.jpg?w=720&q=100&fm=avif" alt="" width="40%" height="250vh">
+    </div>
+
+    <div class="mt-5 d-flex justify-content-around">
+      <img src="https://miro.medium.com/v2/resize:fit:1358/0*UqjRNS939JKX0reH.png" alt="" width="40%" height="250vh">
+      <div class="w-50 mt-4">
+        <h6>Why Create a Website With User Accounts?</h6>
+        <p>With a user account, a visitor creates a personalized profile on your website in order to tailor their experience with your web content. Accounts empower users to access exclusive offers, contribute to a community of fellow customers, reach out to customer support, and receive content recommendations relevant to them.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
